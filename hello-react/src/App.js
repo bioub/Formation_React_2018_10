@@ -8,20 +8,29 @@ import Dropdown from './Dropdown';
 
 class App extends Component {
   state = {
-    colors: ['blue', 'yellow', 'pink'],
+    prenoms: ['Jean', 'Pierre', 'Paul'],
+    selected: 'Pierre',
   };
-  render() {
-    const prenom = 'Eric';
 
+  handleSelected = (selected) => {
+    this.setState({
+      selected,
+    });
+  }
+
+  render() {
     return (
       <div className="App">
         <Hello name="Romain" />
-        <Hello name={prenom} />
+        <Hello name={this.state.selected} />
         <Hello />
         <Clock />
         <ButtonIncrement />
         <ClockDisableable />
-        <Dropdown items={this.state.colors} />
+        <Dropdown 
+          selected={this.state.selected}
+          items={this.state.prenoms}
+          onSelected={this.handleSelected} />
       </div>
     );
     /*return (

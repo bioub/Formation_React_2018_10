@@ -1,0 +1,28 @@
+$borderColor: black;
+
+.Dropdown {
+  cursor: pointer;
+  position: relative;
+}
+
+.DropdownSelected {
+  border: 1px solid $borderColor;
+  padding: 3px;
+}
+
+.DropdownItems {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid $borderColor;
+}
+
+.DropdownItemsItem {
+  padding: 3px;
+}
+
+.DropdownItemsItem:hover {
+  background: lightskyblue;  
+}
