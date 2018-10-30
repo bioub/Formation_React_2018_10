@@ -5,6 +5,7 @@ import Clock from './Clock';
 import ButtonIncrement from './ButtonIncrement';
 import ClockDisableable from './ClockDisableable';
 import Dropdown from './Dropdown';
+import ContactForm from './ContactForm';
 
 class App extends Component {
   state = {
@@ -31,6 +32,7 @@ class App extends Component {
           selected={this.state.selected}
           items={this.state.prenoms}
           onSelected={this.handleSelected} />
+        <ContactForm />
       </div>
     );
     /*return (
