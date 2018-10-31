@@ -18,5 +18,5 @@ const reducer = (previousState = {prenom: 'Toto'}, {type, payload}) => {
   }
 };
 
-export const store = createStore(reducer, composeWithDevTools());
+export const store = createStore(reducer, {prenom: 'Toto'}, composeWithDevTools());
 */

@@ -13,6 +13,7 @@ export default class TodoItem extends Component {
     return (
       <div>
         {this.props.todo}
+        <button>-</button>
       </div>
     )
   }

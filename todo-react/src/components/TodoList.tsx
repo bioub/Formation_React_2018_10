@@ -21,6 +21,8 @@ export default class TodoList extends PureComponent {
   */
   
   render() {
+    // TODO: générer uuid dans App
+    // sinon il est regénéré et on perd l'intérêt d'un clé
     const todoList = this.props.todos.map((todo) => 
       <TodoItem key={uuid()} todo={todo} />
     );

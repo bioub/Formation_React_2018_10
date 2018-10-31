@@ -3,7 +3,6 @@ import { string, arrayOf, func } from 'prop-types';
 import uuid from 'uuid';
 import styles from './Dropdown.module.scss';
 import { connect } from 'react-redux';
-import { SELECT_PRENOM } from './constants';
 import { selectPrenom } from './selectors';
 import { changePrenom } from './actions';
 

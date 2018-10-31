@@ -8,3 +8,6 @@ export const prenomReducer = (previousState = 'Toto', {type, payload}) => {
       return previousState;
   }
 }
+
+
+// const nextState = prenomReducer(previousState, {type: 'TEST'});
