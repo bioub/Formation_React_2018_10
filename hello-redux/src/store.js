@@ -9,6 +9,7 @@ export const store = createStore(
   composeWithDevTools(),
 );
 /*
+const reducer = (previousState) => previousState;
 const reducer = (previousState = {prenom: 'Toto'}, {type, payload}) => {
   switch(type) {
     case CHANGE_PRENOM: 
