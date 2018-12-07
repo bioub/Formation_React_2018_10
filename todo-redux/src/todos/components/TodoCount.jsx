@@ -8,10 +8,10 @@ function TodoCount({count = 0}) {
 }
 */
 
-class TodoCount extends Component {
+export class TodoCount extends Component {
   render() {
     const {count = 0} = this.props;
-    return <div>{count} todos</div>
+    return <p>{count} todos</p>
   }
 }
 

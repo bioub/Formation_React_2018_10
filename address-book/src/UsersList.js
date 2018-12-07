@@ -12,11 +12,14 @@ class UsersList extends Component {
     }
 
     this.props.dispatch(fetchUsers());
+
+    /*
     fetch('https://jsonplaceholder.typicode.com/users')
       .then((res) => res.json())
       .then((users) => {
         this.props.dispatch(receiveUsers(users));
       })
+      */
   }
 
   render() {

@@ -1,6 +1,8 @@
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { FETCH_USERS, RECEIVE_USERS } from './actions';
+import createSagaMiddleware from 'redux-saga';
+import mySaga from './saga';
 
 const initialState = {
   users: [],
@@ -18,7 +20,15 @@ const reducer = (previousState = initialState, action) => {
   }
 };
 
+const sagaMiddleware = createSagaMiddleware();
+
+
 export const store = createStore(
   reducer,
-  composeWithDevTools(),
+  composeWithDevTools(
+    applyMiddleware(sagaMiddleware)
+  ),
 );
+
+
+sagaMiddleware.run(mySaga);

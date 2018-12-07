@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot equals previous snapshot 1`] = `
+<p>
+  10
+   todos
+</p>
+`;
