@@ -29,7 +29,7 @@ export default class Dropdown extends Component {
 
   render() {
     const { items = [], selected = items[0] }  = this.props;
-
+    
     const listItems = items.map((item) => 
       <div 
         onClick={() => this.handleClickItem(item)}

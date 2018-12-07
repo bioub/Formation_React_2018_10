@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+// statefull component
 class Clock extends Component {
   constructor() {
     super();

@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "hello-react"
+		},
+		{
+			"path": "address-book"
+		},
+		{
+			"path": "hello-redux"
+		},
+		{
+			"path": "todo-react"
+		},
+		{
+			"path": "todo-redux"
+		}
+	],
+	"settings": {}
+}

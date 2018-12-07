@@ -17,4 +17,9 @@ const mapStateToProps = (state) => ({
   name: selectPrenom(state),
 });
 
+// thunk
+// function(mapStateToProps) {
+//
+// return function() {}
+// }
 export default connect(mapStateToProps)(Hello);

@@ -1,6 +1,7 @@
 import React from 'react';
 import { string } from 'prop-types';
 
+// stateless component
 function Hello({name = 'Jean'}) {
   return (
     <div>Bonjour {name} !</div>

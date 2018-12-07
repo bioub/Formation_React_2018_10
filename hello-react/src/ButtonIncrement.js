@@ -19,6 +19,7 @@ export default class ButtonIncrement extends Component {
     increment: 0,
   };
 
+  /* ESnext */
   handleClick = () => {
     this.setState({
       increment: this.state.increment + 1,

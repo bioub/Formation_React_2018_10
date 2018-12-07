@@ -16,6 +16,7 @@ class TodoForm extends PureComponent {
   handleSubmit = (event) => {
     event.preventDefault();
     this.props.dispatch(todoAdd(this.props.newTodo));
+    this.props.dispatch(todoChange(''));
   };
 
   handleChange = (event) => {
